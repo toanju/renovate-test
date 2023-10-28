@@ -6,7 +6,7 @@
 			"description": "Testing github-release-attachments",
 			"fileMatch": ["^README\\.md$"],
 			"matchStrings": [
-				"renovate: digest=(?<currentDigest>[a-f0-9]+)\\s.*?_VERSION=(?<currentValue>.*?)[\\s]*$"
+				"renovate: digest=(?<currentDigest>[a-f0-9]+) pkgName=(?<packageName>.*?)\\s.*?_VERSION=(?<currentValue>.*?)[\\s]*$"
 			],
 			"depNameTemplate": "toanju/helm-charts",
 			"datasourceTemplate": "github-release-attachments"
